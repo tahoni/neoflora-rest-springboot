@@ -25,4 +25,16 @@ public class HybridService {
         Optional<Hybrid> hybrid = hybridRepository.findById(hybridId);
         return Optional.empty();
     }
+
+    public Optional<HybridDTO> insert(HybridDTO hybrid) {
+        return Optional.empty();
+    }
+
+    public Optional<HybridDTO> update(HybridDTO hybrid) {
+        return Optional.empty();
+    }
+
+    public boolean delete(String id) {
+        return false;
+    }
 }

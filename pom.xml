@@ -20,7 +20,7 @@
 
 	<!-- Versions -->
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 		<springboot.version>3.0.5</springboot.version>
 		<testcontainers.version>1.17.6</testcontainers.version>
 	</properties>
@@ -106,7 +106,7 @@
 		<dependency>
 			<groupId>za.co.neoflora</groupId>
 			<artifactId>neoflora-dao</artifactId>
-			<version>1.21</version>
+			<version>1.23</version>
 		</dependency>
 	</dependencies>
 

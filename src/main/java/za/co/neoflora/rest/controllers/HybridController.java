@@ -1,10 +1,7 @@
 package za.co.neoflora.rest.controllers;
 
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import za.co.neoflora.dao.model.HybridDTO;
 import za.co.neoflora.rest.services.HybridService;
 
@@ -25,5 +22,20 @@ public class HybridController {
     @GetMapping("/{id}")
     public Optional<HybridDTO> get(@PathVariable String id) {
         return hybridService.get(id);
+    }
+
+    @PostMapping
+    public Optional<HybridDTO> insert(HybridDTO hybrid) {
+        return hybridService.insert(hybrid);
+    }
+
+    @PutMapping
+    public Optional<HybridDTO> update(HybridDTO hybrid) {
+        return hybridService.update(hybrid);
+    }
+
+    @DeleteMapping("/{id}")
+    public boolean delete(@PathVariable String id) {
+        return hybridService.delete(id);
     }
 }

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"za.co.neoflora"})
+@ComponentScan(basePackages = {"za.co.neoflora.dao"})
 public class NeofloraRestApplication {
 
 	public static void main(String[] args) {
