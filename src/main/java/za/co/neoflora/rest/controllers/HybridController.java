@@ -25,17 +25,17 @@ public class HybridController {
     }
 
     @PostMapping
-    public Optional<HybridDTO> insert(HybridDTO hybrid) {
+    public Optional<HybridDTO> insert(@RequestBody HybridDTO hybrid) {
         return hybridService.insert(hybrid);
     }
 
     @PutMapping
-    public Optional<HybridDTO> update(HybridDTO hybrid) {
+    public Optional<HybridDTO> update(@RequestBody HybridDTO hybrid) {
         return hybridService.update(hybrid);
     }
 
     @DeleteMapping("/{id}")
-    public boolean delete(@PathVariable String id) {
-        return hybridService.delete(id);
+    public void delete(@PathVariable String id) {
+        hybridService.delete(id);
     }
 }

@@ -102,11 +102,18 @@
 			<version>2.0</version>
 		</dependency>
 
+		<!-- Data Structures -->
+		<dependency>
+		<groupId>org.modelmapper</groupId>
+		<artifactId>modelmapper</artifactId>
+		<version>3.1.1</version>
+		</dependency>
+
 		<!-- Neoflora -->
 		<dependency>
 			<groupId>za.co.neoflora</groupId>
 			<artifactId>neoflora-dao</artifactId>
-			<version>1.24</version>
+			<version>1.35</version>
 		</dependency>
 	</dependencies>
 
