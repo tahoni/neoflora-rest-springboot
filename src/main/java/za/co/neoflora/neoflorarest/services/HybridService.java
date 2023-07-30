@@ -1,21 +1,19 @@
-package za.co.neoflora.rest.services;
+package za.co.neoflora.neoflorarest.services;
 
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-import za.co.neoflora.dao.domain.Hybrid;
-import za.co.neoflora.dao.domain.OffspringType;
-import za.co.neoflora.dao.domain.SeedType;
-import za.co.neoflora.dao.model.HybridDTO;
-import za.co.neoflora.dao.repositories.HybridRepository;
-import za.co.neoflora.dao.repositories.OffspringTypeRepository;
-import za.co.neoflora.dao.repositories.SeedTypeRepository;
+import za.co.neoflora.neofloradao.domain.Hybrid;
+import za.co.neoflora.neofloradao.domain.OffspringType;
+import za.co.neoflora.neofloradao.domain.SeedType;
+import za.co.neoflora.neofloradao.model.HybridDTO;
+import za.co.neoflora.neofloradao.repositories.HybridRepository;
+import za.co.neoflora.neofloradao.repositories.OffspringTypeRepository;
+import za.co.neoflora.neofloradao.repositories.SeedTypeRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Slf4j
 @AllArgsConstructor
 @Service
 public class HybridService {
