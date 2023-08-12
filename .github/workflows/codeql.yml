@@ -70,6 +70,8 @@ jobs:
         distribution: 'oracle'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
+        server-username: tahoni@gmail.com
+        server-password: ${{ github.token }}
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
 
