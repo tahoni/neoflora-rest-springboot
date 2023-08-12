@@ -1,4 +1,4 @@
-name: Qodana
+name: Qodana neoflora-rest-springboot
 on:
   workflow_dispatch:
   pull_request:
