@@ -73,10 +73,11 @@ jobs:
         server-username: tahoni@gmail.com
         server-password: ${{ github.token }}
 
-    - name: Build with Maven
-      run: mvn -B compile --file pom.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+      with:
+        server-username: tahoni@gmail.com
+        server-password: ${{ github.token }}      
         
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
