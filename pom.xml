@@ -26,13 +26,6 @@
 		<app.repo.name>neoflora-dao-springboot</app.repo.name>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>github-neoflora-dao</id>
-			<url>${app.repo.url}/${app.repo.user}/${app.repo.name}</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<!-- Spring Boot starters -->
 		<dependency>
