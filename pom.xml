@@ -28,10 +28,6 @@
 
 	<repositories>
 		<repository>
-			<id>github</id>
-			<url>${app.repo.url}/${app.repo.user}</url>
-		</repository>
-		<repository>
 			<id>github-neoflora-dao</id>
 			<url>${app.repo.url}/${app.repo.user}/${app.repo.name}</url>
 		</repository>
