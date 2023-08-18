@@ -22,6 +22,12 @@ jobs:
           distribution: 'oracle'
           settings-path: ${{ github.workspace }} # location for the settings.xml file
 
+      - name: Unit test with Maven
+        run: |
+          mvn -B test-compile --file pom.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.PACKAGE_READONLY }}
+
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2023.2
         env:
