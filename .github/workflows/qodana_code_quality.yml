@@ -1,3 +1,5 @@
+# Working solution courtesy of https://github.com/kharus at https://github.com/kharus/sigma-hack
+# https://youtrack.jetbrains.com/issue/QD-6587/Qodana-ignores-maven-setup-on-github
 name: Qodana
 on:
   workflow_dispatch:
