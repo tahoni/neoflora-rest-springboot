@@ -26,7 +26,7 @@ jobs:
         run: |
           mvn -B test-compile --file pom.xml
         env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGE_READONLY }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2023.2
