@@ -31,9 +31,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2023.2
+        uses: JetBrains/qodana-action@v2024.1
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }} # read the steps about it below
         with:
           args: -u,root
-          
